@@ -4,13 +4,12 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class IndexController extends AbstractController
+class PanelController extends AbstractController
 {
     public function index(): Response
     {
-        
-
-        return $this->render('/index/index.html.twig', [
+       
+        return $this->render('/panel/panel.index.html.twig', [
             
         ]);
     }

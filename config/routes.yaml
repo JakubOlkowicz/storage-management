@@ -4,4 +4,8 @@ controllers:
 
 index:
     path: /
-    controller: App\Controller\IndexController::number
+    controller: App\Controller\IndexController::index
+
+panel:
+    path: /panel
+    controller: App\Controller\PanelController::index
