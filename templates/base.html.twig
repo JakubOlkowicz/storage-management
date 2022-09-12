@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-50">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body class="h-full">
+        <div class="flex">
+            {% block sidebar %}{% endblock %}
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
